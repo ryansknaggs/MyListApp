@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>The Grocery List</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="loginStyle.css" type="text/css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+        <body>
+            <div class="jumbotron text-center">
+              <h1>The Grocery List</h1>
+              <p>Shopping day after day, night after night, year after year!</p> 
+                </div>
+                    <div class="container">
+                        <form>
+                           <div class="form-group">
+                                <div class="col-5"><label for="email">Email:</label></div>
+                           </div>
+                           <div class="form-group">
+                                <div class="col-5"><input type="email" class="form-control" id="email" placeholder="Enter email"></div>
+                           </div>
+                           <div class="form-group">
+                                <div class="col-5"><label for="pwd">Password:</label></div>
+                           </div>
+                           <div class="form-group">
+                                <div class="col-5"><input type="password" class="form-control" id="pwd" placeholder="Enter password"></div>
+                           </div>
+                           <div class="form-group">
+                                <div class="col-5"><div class="checkbox"><label><input type="checkbox"> Remember me</label></div></div>
+                           </div>
+                           <div class="form-group">
+                                <div class="col-5"><button type="submit" class="btn btn-default">Submit</button></div>
+                           </div>
+                        </form>
+                </div>
+        </body>
 </html>
