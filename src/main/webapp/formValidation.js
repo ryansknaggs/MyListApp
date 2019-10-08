@@ -3,17 +3,18 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-function check() {
-  var $result = $("#result");
-  var email = $("#email").val();
-  $result.text("");
-
-  if (validateEmail(email)) {
-      alert(email + "Valid Email");
-  } else {
-      alert(email)
+function checkCreateEmail() {
+  var crtEmail = $("#crtEmail").val();
+  if(!validateEmail(crtEmail)){
+      alert("Is NOT A Valid Email!");
   }
   return false;
 }
 
-$("#validate").on("click", validate);
+function checkLoginEmail(){
+    var logInEmail = $("#logInEmail").val();
+    if (!validateEmail(logInEmail)){
+      alert("Is NOT A Valid Email!"); 
+  } 
+  return false;
+}
